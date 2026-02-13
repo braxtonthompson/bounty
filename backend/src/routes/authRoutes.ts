@@ -1,7 +1,7 @@
 import express, { type Request, type Response } from "express";
 import loginController from "../controllers/auth/loginController.js";
 import logoutController from "../controllers/auth/logoutController.js";
-import registerController from "../controllers/auth/registerUserController.js";
+import registerController from "../controllers/auth/registerController.js";
 
 const router = express.Router();
 
