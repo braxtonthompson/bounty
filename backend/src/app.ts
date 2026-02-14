@@ -1,6 +1,6 @@
 import express, { type Request, type Response } from "express";
-import authRouter from "../src/routes/authRoutes"
 import { authenticate } from "./middlewares/authenticate.middleware";
+import authRouter from "./routes/auth.routes"
 
 const app = express();
 

@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { login } from "../../services/authService";
 import { signAccessToken } from "../../utils/jwt";
+import { login } from "../../services/auth.service";
 
 type ILoginRequest = { email: string; password: string };
 

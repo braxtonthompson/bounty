@@ -1,5 +1,5 @@
 import bcrypt from "bcrypt";
-import { userRepo } from "../repos/userRepo";
+import { userRepo } from "../repos/user.repo";
 
 const invalidMessage = "Invalid email/password.";
 

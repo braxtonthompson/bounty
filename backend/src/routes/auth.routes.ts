@@ -1,7 +1,7 @@
 import express, { type Request, type Response } from "express";
-import loginController from "../controllers/auth/loginController";
-import logoutController from "../controllers/auth/logoutController";
-import registerController from "../controllers/auth/registerController";
+import loginController from "../controllers/auth/login.controller";
+import logoutController from "../controllers/auth/logout.controller";
+import registerController from "../controllers/auth/register.controller";
 
 const router = express.Router();
 
