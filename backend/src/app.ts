@@ -4,17 +4,20 @@ import authRouter from "./routes/auth.routes"
 
 const app = express();
 
-app.use(express.json());
+const api = express.Router()
+app.use("/api", api)
 
-app.get("/", (_, res) => {
-  res.send("API running");
+api.use(express.json());
+
+api.get("/", (_, res) => {
+  res.status(200).json({ message: "API running!" });
 });
 
-app.use("/auth", authRouter);
+api.use("/auth", authRouter);
 
-app.use(authenticate)
+api.use(authenticate)
 
-app.use("/test", (req: Request, res: Response) => {
+api.use("/test", (req: Request, res: Response) => {
   res.send("Test endpoint working")
 })
 
