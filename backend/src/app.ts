@@ -10,7 +10,7 @@ app.use("/api", api)
 api.use(express.json());
 
 api.get("/", (_, res) => {
-  res.status(200).json({ message: "API running!" });
+  return res.status(200).json({ message: "API running!" });
 });
 
 api.use("/auth", authRouter);
